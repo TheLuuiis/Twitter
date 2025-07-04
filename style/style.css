@@ -2,9 +2,10 @@
 
 :root {
     --background: #000;
+    --textBlack: #000;
     --text: #fff;
     --background-white: #fff;
-    --blue: rgb(29, 155, 240);
+    --bluee: rgb(29, 155, 240);
 }
 
 * {
@@ -16,6 +17,15 @@
 body {
     background-color: var(--background);
     font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 .container {
@@ -31,10 +41,608 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
 }
 
-.logo {
+.container-logo .logo {
+    width: 370px; 
+    height: auto;
+    padding: 32px;
+}
+
+.container-unete {
     width: 100%;
-    height: 256.75px;
+    max-width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.container-form {
+    width: 760px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 20px;
+    left: 75px;
+}
+
+.container-form h1 {
+    color: var(--text);
+    font-size: 64px;
+    font-weight: 700;
+    text-align: start;
+    max-width: 600px;
+    line-height: 1.3;
+    margin: 48px 0px;
+}
+
+.container-form .unete {
+    color: var(--text);
+    font-size: 31px;
+    font-weight: 700;
+    text-align: start;
+    margin: 0px 0px 32px;
+}
+
+.container-social {
+    gap: 15px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-social a {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: .3s ease;
+    overflow: hidden;
+    background-color: var(--background-white);
+}
+
+.container-form .apple {
+    gap: 10px;
+    width: 100%;
+    height: 42px;
+    display: flex;
+}
+
+.container-form .apple p {
+    color: var(--textBlack);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.gmail {
+    gap: 10px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.gmail img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.name {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.name span {
+    color: var(--textBlack);
+    font-size: 12.5px;
+    font-weight: 500;
+    text-align: start;
+    text-decoration: none !important;
+    line-height: 1;
+}
+
+.name p {
+    color: #5f6368;
+    font-size: 11.5px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1;
+    margin-right: 40px;
+    margin-top: 5px;
+}
+
+.social svg {
+    width: 20px;
+    height: 20px;
+}
+
+.container-social sub {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container-social .btnCrearCuenta {
+    width: 100%;
+    height: auto;
+    color: var(--text);
+    background-color: var(--bluee);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: .3s ease;
+    margin: 0px 0px 6px;
+}
+
+.container-social .politicas {
+    color: #5f6368;
+    font-size: 10px;
+    font-weight: 500;
+    text-align: start;
+    line-height: 1;
+    margin: 0px 0px 30px;
+}
+
+.container-social .politicas span {
+    color: var(--bluee);
+    transition: .2s ease;
+}
+
+.container-social .politicas span:hover {
+    text-decoration: underline;
+}
+
+.container-inicio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-inicio span {
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 500;
+    text-align: start;
+    margin: 0px 0px 20px;
+}
+
+.container-inicio a {
+    color: var(--bluee);
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s ease;
+    white-space: middle;
+    background-color: transparent;
+    border-color: rgb(83, 100, 113);;
+}
+
+footer {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1.5%;
+    background-color: rgb(255, 255, 255, 0..1);
+}
+
+.container-footer {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    gap: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info p {
+    color: #5f6368;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: start;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.info p:hover {
+    text-decoration: underline;
+}
+
+.info .line {
+    color: rgba(255, 255, 255, 0.2);
+    border: 1px solid transparent;
+}
+
+/* Responsive General */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .container-logo, 
+    .container-unete {
+        max-width: 100%;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .container-form {
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        left: 0;
+        bottom: 0;
+    }
+
+    .container-form h1 {
+        font-size: 40px;
+        text-align: center;
+        margin: 24px 0;
+    }
+
+    .container-form .unete {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .container-social {
+        width: 100%;
+        align-items: center;
+    }
+
+    .container-inicio span,
+    .container-inicio a {
+        text-align: center;
+    }
+}
+
+/* Pantallas medianas */
+@media (max-width: 700px) {
+    .container-form h1 {
+        font-size: 32px;
+    }
+
+    .container-form .unete {
+        font-size: 22px;
+    }
+
+    .container-social sub {
+        font-size: 18px;
+    }
+
+    .container-social .btnCrearCuenta {
+        font-size: 15px;
+    }
+}
+
+/* Pantallas pequeñas: 500px o menos */
+@media (max-width: 500px) {
+    .container-form h1 {
+        font-size: 26px;
+    }
+
+    .container-form .unete {
+        font-size: 20px;
+    }
+
+    .container-form {
+        padding: 0 15px;
+    }
+
+    .container-social {
+        gap: 10px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 30px;
+        padding: 10px 0;
+    }
+
+    .container-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .info {
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+
+    .info .line {
+        display: none;
+    }
+}
+
+/* Pantallas muy pequeñas: 300px */
+@media (max-width: 350px) {
+    .container-form h1 {
+        font-size: 22px;
+    }
+
+    .container-form .unete {
+        font-size: 18px;
+    }
+
+    .container-form {
+        max-width: 90%;
+    }
+
+    .gmail .name span {
+        font-size: 11px;
+    }
+
+    .gmail .name p {
+        font-size: 10px;
+    }
+
+    .container-social .politicas {
+        font-size: 9px;
+    }
+}
+
+/* Modal */
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background-color: rgba(91, 112, 131, 0.4);
+}
+
+.modal-form {
+    width: 600px;
+    height: 650px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    padding: 0px 80px;
+    position: relative;
+    background-color: var(--background);
+}
+
+.modal-form header {
+    width: 100%;
+    height: auto;
+    min-height: 53px;
+    display: flex;
+    position: relative;
+    margin: 0px 0px 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+}
+
+.modal-form header svg {
+    width: 40px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal-form .bxr {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 14.5px;
+}
+
+.container-form-modal {
+    width: 440px;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.modal-form h1 {
+    color: var(--text);
+    font-size: 31px;
+    font-weight: 600;
+    text-align: start;
+    margin: 0px 0px 30px;
+}
+
+.container-form-modal form {
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 15px;
+}
+
+.input {
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.input input {
+    width: 100%;
+    height: auto;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    padding: 20px;
+    transition: .5s ease-in;
+    border-radius: 10px;
+    border: 1px solid #5f6368;
+    background-color: transparent;
+}
+
+.input input:focus {
+    color: var(--text);
+    outline: none;
+    border: 1px solid var(--bluee);
+}
+
+.input input:focus::placeholder {
+  color: var(--bluee);
+}
+
+.container-form-modal .container-correo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.container-form-modal .container-correo button {
+    color: var(--bluee);
+    font-size: 15px;
+    font-weight: 500;
+    text-align: end;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container-fechas {
+    width: 100%;
+    height: auto;
+}
+
+.container-fechas span {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+    margin: 0px 0px 20px;
+}
+
+.container-fechas p {
+    color: #5f6368;
+    font-size: 12.5px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0px 0px 20px;
+}
+
+.container-selection-fechas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0px 0px 70px;
+    justify-content: space-between;
+}
+
+.container-selection-fechas select {
+    cursor: pointer;
+    transition: .6s ease-in;
+}
+
+.container-selection-fechas select:focus {
+    color: var(--bluee);
+    outline: none;
+    border: 1px solid var(--bluee);
+}
+
+.container-selection-fechas select:focus::placeholder {
+  color: var(--bluee);
+}
+
+.container-selection-fechas select option {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+    background-color: var(--background);
+}
+
+.container-selection-fechas .mes {
+    width: 210px;
+    height: auto;
+    padding: 20px;
+    color: #5f6368;
+    border-radius: 6px;
+    position: relative;
+    transition: .6 ease-in;
+    border: 1px solid #5f6368;
+    background-color: transparent;
+}
+
+.container-selection-fechas .dia {
+    width: 89.5px;
+    height: auto;
+    padding: 20px;
+    color: #5f6368;
+    border-radius: 6px;
+    position: relative;
+    transition: .6 ease-in;
+    border: 1px solid #5f6368;
+    background-color: transparent;
+}
+
+.container-selection-fechas .año {
+    width: 112.5px;
+    height: auto;
+    padding: 20px;
+    color: #5f6368;
+    border-radius: 6px;
+    position: relative;
+    transition: .6 ease-in;
+    border: 1px solid #5f6368;
+    background-color: transparent;
+}
+
+.container-form-modal button {
+    width: 100%;
+    height: auto;
+    padding: 14px;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    white-space: middle;
+    transition: .6s ease-in;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: var(--bluee);
 }
