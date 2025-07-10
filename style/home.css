@@ -18,25 +18,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     background-color: var(--background);
     font-family: 'Poppins', sans-serif;
 }
 
 /* Container */
-
 .container {
     width: 100%;
     min-height: 100vh;
     display: flex;
+    position: relative;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .container header {
     width: 595px;
-    height: auto;
-    position: relative;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: hidden;
     display: flex;
     padding: 15px;
     justify-content: end;
@@ -114,6 +114,7 @@ body {
     height: 65.06px;
     display: flex;
     cursor: pointer;
+    margin: 50px 0px;
     justify-content: space-between;
 }
 
@@ -155,7 +156,9 @@ body {
     text-align: start;
 }
 
+/* Container */
 .container-main  {
+    gap: 20px;
     width: 100%;
     max-width: 1325px;
     height: auto;
@@ -164,7 +167,7 @@ body {
 
 .container-main main {
     width: 598px;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     border-left: 1px solid rgba(255, 255, 255, 0.2); 
@@ -178,6 +181,8 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .container-main main header a {
@@ -278,7 +283,7 @@ body {
 
 .happening textarea::placeholder {
     color: #71767B;
-    font-size: 300;
+    font-size: 22px;
     font-weight: 300;
 }
 
@@ -320,6 +325,7 @@ body {
     height: auto;
     display: flex;
     padding: 0px 16px;
+    margin: 0px 0px 20px;
 }
 
 .img-poster {
@@ -491,8 +497,616 @@ body {
     display: flex;
 }
 
-.container aside {
-    width: 350px;
+/* Poster 2 - Critiano Ronaldo */
+.container-poster-2 {
+    width: 100%;
     height: auto;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    padding: 0px 16px;
+    margin: 0px 0px 20px;
+}
+
+.img-poster {
+    width: 40px;
+    height: auto;
+}
+
+.img-poster img {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container-poster-cristiano {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 11px;
+    flex-direction: column;
+}
+
+.container-profile-cristiano {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px;
+}
+
+.profile-cristiano {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    gap: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile-cristiano .title h5 {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.profile-cristiano .title svg {
+    width: 18.75px;
+    height: 18.75px;
+}
+
+.profile-cristiano .title p {
+    color: #71767B;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.comments {
+    gap: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0px 0px 15px;
+}
+
+.comments p {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.comments img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.profile-cristiano a {
+    color: var(--bluee);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.points {
+    gap: 10px;
+    width: auto;
+    display: flex;
+    position: relative;
+    bottom: 20px;
+}
+
+.points svg {
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.container-img-cristiano {
+    width: 100%;
+    height: 516px;
+    display: flex;
+    margin: 0px 0px 20px;
+}
+
+.container-img-cristiano .img-1-cristiano {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}
+
+.container-img-cristiano .img-1-cristiano img {
+    width: 515px;
+    height: 516px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.container-likes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-likes .icon {
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-likes .icon p {
+    color: #71767B;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.container-guardar {
+    gap: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+/* Poster 3 - Uefa Champions */
+.container-poster-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0px 16px;
+    margin: 0px 0px 20px;
+}
+
+.img-poster {
+    width: 40px;
+    height: auto;
+}
+
+.img-poster img {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container-poster-uefa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-left: 11px;
+    flex-direction: column;
+}
+
+.container-profile-uefa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px;
+}
+
+.profile-uefa {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    gap: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile-uefa .title h5 {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.profile-uefa .title svg {
+    width: 18.75px;
+    height: 18.75px;
+}
+
+.profile-uefa .title p {
+    color: #71767B;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.comments {
+    gap: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0px 0px 15px;
+}
+
+.comments p {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.comments img {
+    width: 18px;
+    height: 18px;
+    object-fit: cover;
+}
+
+.profile-uefa a {
+    color: var(--bluee);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.points {
+    gap: 10px;
+    width: auto;
+    display: flex;
+    position: relative;
+    bottom: 20px;
+}
+
+.points svg {
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.container-img-uefa {
+    width: 100%;
+    height: 516px;
+    display: flex;
+    margin: 0px 0px 20px;
+}
+
+.container-img-uefa .img-1-uefa {
+    width: 100%;
+    max-width: 50%;
+    height: auto;
+}
+
+.container-img-uefa .img-1-uefa img {
+    width: 382.5px;
+    height: 516px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.container-likes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-likes .icon {
+    gap: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container-likes .icon p {
+    color: #71767B;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: start;
+    transition: .6s ease;
+}
+
+.container-likes .icon p:hover {
+    color: var(--bluee);
+}
+
+.container-guardar {
+    gap: 5px;
+    width: auto;
+    height: auto;
+    display: flex;
+}
+
+/* Aside */
+.container aside {    
+    gap: 30px;
+    width: 350px;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    overflow-y: hidden;
+}
+
+.container-search {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.container-search input {
+    width: 100%;
+    height: 40px;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    padding: 0px 40px;
+    background-color: transparent;
+    border-radius: 16px;
+    transition: .3s ease; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+::placeholder {
+    color: var(--text);
+    font-size: 15px;
+}
+
+.container-search input:focus {
+    outline: none;
+    border: 1px solid var(--bluee);
+}
+
+.container-search img {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    left: 4%;
+    top: 25%;
+}
+
+.container-premium {
+    width: 100%;
+    height: auto;
+    padding: 12px 16px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+}
+
+.container-premium h2 {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    margin: 0px 0px 10px;
+}
+
+.container-premium p {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0px 0px 20px;
+}
+
+.container-premium a {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 30px;
+    border-radius: 16px;
+    text-decoration: none;
+    transition: .3s ease;
+    background-color: var(--bluee);
+    border: 1px solid transparent;
+}
+
+.container-hap {
+    widows: 100%;
+    height: auto;
+    border-radius: 16px;
+    padding: 12px 16px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container-hap h3 {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    margin: 0px 0px 10px;
+}
+
+.container-hap .nfl {
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.container-hap .nfl img {
+    width: 79px;
+    height: 79px;
+    object-fit: cover;
+}
+
+.container-hap .nfl .description-nfl {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-hap .nfl .description-nfl h4 {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+    margin: 0px 0px 3px;
+}
+
+.container-hap .nfl .description-nfl p {
+    color: #71767B;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.container-details {
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 12px 16px 25px;
+}
+
+.card-detail {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-detail .detail {
+    width: 200px;
+    height: 100%;
+}
+
+.card-detail .detail sub {
+    color: #71767B;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: start;
+    margin: 0px 0px 5px;
+}
+
+.card-detail .detail h5 {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.container-details a {
+    color: var(--bluee);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.container-follows {
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 12px 16px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.container-follows h3 {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: start;
+    margin: 0px 0px 10px;
+}
+
+.container-counts {
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-follow {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.count {
+    gap: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: none;
+    border-radius: 50%;
+}
+
+.name-follow {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-follow {
+    gap: 6px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-follow h5 {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    text-align: start;
+}
+
+.name-follow p {
+    color: #71767B;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.card-follow a {
+    color: var(--textBlack);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 15px;
+    transition: .3s ease;
+    text-decoration: none;
+    background-color: var(--background-white);
 }
