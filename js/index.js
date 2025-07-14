@@ -2,7 +2,6 @@
 // <    >  =>
 
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('Funcionando!');
     const containerModal = document.querySelector('.container-modal');
     const btnOpen = document.getElementById('btnOpen');
     const btnCloset = document.getElementById('btnCloset');
@@ -34,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         } else {
             nameError.textContent = '';
-        };
+        }
 
         if (!tel.value.trim()) {
             telError.textContent = 'Campo obligatorio';
@@ -45,7 +44,12 @@ window.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         } else {
             telError.textContent = '';
-        };
+        }
+
+        // Si todo es válido, redirigir a home.html
+        if (isValid) {
+            window.location.href = "home.html";
+        }
     });
 
     const errorInputs = () => {
@@ -77,6 +81,5 @@ window.addEventListener('DOMContentLoaded', () => {
         btnSubmit.addEventListener('click', () => {
         form.dispatchEvent(new Event('submit'));
     });
-
 
 });
