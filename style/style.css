@@ -660,3 +660,119 @@ footer {
     left: 1%;
     bottom: -7px;
 }
+
+/* =================== MODAL RESPONSIVE =================== */
+@media (max-width: 1400px) {
+  .modal-form {
+    width: 500px;
+    height: 600px;
+    padding: 0 40px;
+  }
+  .container-form-modal {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .modal-form {
+    width: 400px;
+    height: 500px;
+    padding: 0 20px;
+  }
+  .container-form-modal {
+    width: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .modal-form {
+    width: 350px;
+    height: 450px;
+    padding: 0 10px;
+  }
+  .container-form-modal {
+    width: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal-form {
+    width: 95vw;
+    height: auto;
+    min-height: 350px;
+    padding: 0 5vw;
+    border-radius: 10px;
+  }
+  .container-form-modal {
+    width: 90vw;
+    min-width: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 400px) {
+    .container-modal {
+        background-color: var(--background);
+    }
+
+    .modal-form {
+        width: 98vw;
+        min-width: 0;
+        height: auto;
+        min-height: 200px;
+        padding: 50px 1vw;
+        border-radius: 6px;
+    }
+  .container-form-modal {
+    width: 96vw;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .container-form-modal form .input {
+    width: 100%;
+  }
+  .modal-form h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .container-form-modal form {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  .modal-form {
+    width: 100vw !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 100px !important;
+    padding: 10px 8px 10px 8px !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+  }
+  .container-form-modal {
+    width: 100vw !important;
+    min-width: 0 !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
+  }
+  .modal-form h1 {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+  }
+  .container-form-modal form {
+    gap: 5px !important;
+  }
+  .input input,
+  .container-selection-fechas .mes,
+  .container-selection-fechas .dia,
+  .container-selection-fechas .año {
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+  .container-form-modal button {
+    padding: 10px !important;
+    font-size: 13px !important;
+  }
+}
